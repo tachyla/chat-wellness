@@ -1,7 +1,9 @@
 {
-  "name": "$name$",
-  "version": "$version$",
+  "name": "chat_wellness",
+  "version": "1.0.0",
   "dependencies": {
-    $END$
+    "express": "^4.17.1",
+    "twilio": "^3.39.4",
+    "twilio-cli": "^1.9.5"
   }
 }
