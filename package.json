@@ -1,0 +1,9 @@
+{
+  "name": "chat_wellness",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "twilio": "^3.39.4",
+    "twilio-cli": "^1.9.5"
+  }
+}
