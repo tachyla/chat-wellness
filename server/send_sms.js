@@ -6,7 +6,8 @@ const client = require('twilio')(accountSid, authToken);
 
 client.messages
   .create({
-     body: 'If you got this text, you want to subscribe to something TaChyla has to say...',
+     // message body from input field & populated here
+     body: 'Hey Love, Im gonna take a break this week. TTYL.',
      from: '+16782632882',
      // phone number can be replaced with a list of friends phone number/userid
      to: '+16785424119'
