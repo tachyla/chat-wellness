@@ -1,24 +1,22 @@
-const http = require('http');
 const express = require('express');
+const http = require('http');
+
+
 const path = require ('path');
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
 
 
 const app = express();
 
-//set ejs as the template loading engine
-app.set('view engine', 'ejs');
-
 //instruct the app to point to this directory name
 app.use(express.static(path.resolve(__dirname, '../client/public')));
 
 // direct express to serve this path when making a GET request
-//routes
-app.get('/', (req, res) => {
+//route
+app.get('/', function (req, res) {
     const index = path.resolve(__dirname, '../client/public', 'index.html');
-    // res.sendFile(index);
     res.render(index);
-})
+});
 
 //when message is received make POST request to twilio
 app.post('/sms', (req, res) => {
