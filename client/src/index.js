@@ -7,3 +7,5 @@ ReactDOM.render(
     <Card/>,
     document.getElementById('root')
 );
+
+require ("../server/server.js");

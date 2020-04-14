@@ -18,7 +18,7 @@ class message {
                 body: 'Hey Love, Im gonna take a break this week. TTYL.',
                 from: '+16782632882',
                 // phone number can be replaced with a list of friends phone number/userid
-                to: ''
+                to: '+16785424119'
             })
             .then(message => console.log(message.sid));
 
